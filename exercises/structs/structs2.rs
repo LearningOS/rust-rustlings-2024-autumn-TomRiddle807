@@ -52,6 +52,6 @@ mod tests {
         assert_eq!(your_order.made_by_mobile, order_template.made_by_mobile);
         assert_eq!(your_order.made_by_email, order_template.made_by_email);
         assert_eq!(your_order.item_number, order_template.item_number);
-        assert_eq!(your_order.count, 1);
+        assert_eq!(your_order.count, 1);  
     }
 }
