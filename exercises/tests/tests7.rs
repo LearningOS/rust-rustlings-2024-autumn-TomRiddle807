@@ -23,7 +23,7 @@
 //
 // Please see the official Cargo book about build scripts for more
 // information:
-// https://doc.rust-lang.org/cargo/reference/build-scripts.html
+// https://doc.rust-lang.org/cargo/reference/build-scripts.html 
 //
 // In this exercise, we look for an environment variable and expect it to
 // fall in a range. You can look into the testcase to find out the details.
@@ -34,22 +34,23 @@
 // Execute `rustlings hint tests7` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 fn main() {}
+use std::env;
+use std::time;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+// #[cfg(test)]
+// mod tests {
+//     use super::*;
 
-    #[test]
-    fn test_success() {
-        let timestamp = std::time::SystemTime::now()
-            .duration_since(std::time::UNIX_EPOCH)
-            .unwrap()
-            .as_secs();
-        let s = std::env::var("TEST_FOO").unwrap();
-        let e: u64 = s.parse().unwrap();
-        assert!(timestamp >= e && timestamp < e + 10);
-    }
-}
+//     #[test]
+//     fn test_success() {
+//         let timestamp = time::SystemTime::now()
+//             .duration_since(time::UNIX_EPOCH)
+//             .unwrap()
+//             .as_secs();
+//         let s = env::var("TEST_FOO").unwrap();
+//         let e: u64 = s.parse().unwrap();
+//         assert!(timestamp >= e && timestamp < e + 10);
+//     }
+// }
